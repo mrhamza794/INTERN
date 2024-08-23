@@ -1,0 +1,153 @@
+@keyframes example {
+    0% {
+        margin: 1;
+    }
+
+    50% {
+        scale: 1.1
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+/* The element to apply the animation to */
+.animation {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+.transition {
+    transform: scale(1);
+    transition: transform 2s ease;
+}
+
+.transition:hover {
+    transform: scale(1.2);
+}
+.transition a:hover {
+    transform: scale(1.1);
+    color: rgb(22,213,255) !important;
+    
+   
+}
+
+.hero-container
+{
+    padding-top: 175px;
+    padding-right: 50px;
+}
+.hero-container h1
+{
+    font-size: 55px;
+    font-weight: lighter;
+}
+
+.centering-content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 100px 0px;
+}
+
+.centering-content img
+{
+    margin-left: 30px;
+}
+.centering-content h1
+{
+    font-size: 60px;
+    font-weight: lighter;
+}
+.centering-content p
+{
+    font-size:large;
+    color: rgb(22,213,255);
+}
+
+.box h3
+{
+    font-weight:bold;
+    font-size: large;
+    padding-bottom: 10px;
+}
+.box p
+{
+    padding-bottom: 25px;
+}
+ /* inserting triangle */
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 0px solid transparent;
+	border-right: 125px solid rgb(242,248,254);
+	border-bottom: 125px solid transparent;
+}
+.triangle-right:hover{
+    width: 0;
+	height: 0;
+	border-top: 0px solid transparent;
+	border-right: 125px solid transparent;
+	border-bottom: 125px solid transparent;
+}
+.topright {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    
+  }
+  /* finished inserting triangle */
+
+.navbar-nav .nav-link:hover
+{
+color:rgb(22,213,255);
+}
+
+
+/* radius*/
+.radius-fix{
+    border-radius: 10px;
+}
+
+/* table team images width setting */
+.image-width img
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+  /* shadow */
+  div.card {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+
+  /* backgroung image */
+
+ 
+
+.main-banner {
+    background: url('/assets/images/tQXYHw.svg') no-repeat center center/cover;
+    height: auto;
+    width: 100%;
+    color: white;
+    
+    position:fixed;
+}
+.content {
+    max-width: 1200px;
+    margin: 0px;
+}
+
+
+
+/* end background image */
+  
+
+
+
+
