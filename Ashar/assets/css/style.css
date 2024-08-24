@@ -121,9 +121,13 @@ color:rgb(22,213,255);
 }
 
   /* shadow */
-  div.card {
+  .card {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
+  }
+
+  .border-form{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
   }
 
   /* backgroung image */
@@ -143,7 +147,28 @@ color:rgb(22,213,255);
     margin: 0px;
 }
 
+.email-background {
+    background-image: url("/Ashar/assets/images/tQXYHw.svg"); /* Replace with your image path */
+    background-size:98%;
+    background-attachment: fixed;
+    /* background-position: center; */
+    
+    padding: 10px;
+    border-radius: 5px;
+  }
+    .email-background input {
+      background-color: transparent;
+      border: none;
+      color: black;
+    }
 
+    .emailTick-width
+    {
+        width: 30px;
+        height: 30px;
+        padding-left: 4px;
+        
+    }
 
 /* end background image */
   
