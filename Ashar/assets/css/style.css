@@ -185,7 +185,24 @@ color:rgb(22,213,255);
 
 /* trying new animation  */
 
+.content-section {
+    display: none;
+  }
 
+  .content-section:target {
+    display: block;
+  }
+
+
+  .form-container {
+    min-height: 100vh;
+}
+.form-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
   
 
 

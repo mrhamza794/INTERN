@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar  -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 bg-info" style="width: 20%">
+          <div class="d-flex justify-content-between my-2">
+            <img
+              style="background-color: white; border-radius: 100%"
+              src="assets/images/logo.png"
+              alt="logo"
+              class="text-white"
+            />
+          </div>
+          <div class="d-flex justify-content-between my-2">
+            <h3 class="text-white"><strong>We Monitize4U</strong></h3>
+          </div>
+          <div class="d-flex my-2">
+            <a
+              href="dashboard.html"
+              class="align-items-center text-decoration-none fw-bold text-white"
+            >
+              <i class="fa-solid fa-house-chimney"></i>
+              <span>Dashboard</span></a
+            >
+          </div>
+          <div class="d-flex pb-2">
+            <a
+              href="pricechart.html"
+              class="align-items-center text-decoration-none fw-bold text-white"
+            >
+              <i class="fa-solid fa-chart-line"></i>
+              <span>Price Chart</span></a
+            >
+          </div>
+          <div class="d-flex pb-2">
+            <a
+              href="verification.html"
+              class="align-items-center text-decoration-none fw-bold text-white"
+            >
+              <i class="fa-regular fa-circle-check"></i>
+              <span>Verification</span></a
+            >
+          </div>
+          <div class="d-flex pb-2">
+            <a
+              href="subscribe.html"
+              class="align-items-center text-decoration-none fw-bold text-white"
+            >
+              <i class="fa-regular fa-bookmark"></i>
+              <span>Subscription</span></a
+            >
+          </div>
+          <div class="d-flex pb-2">
+            <a
+              href="value_unlock.html"
+              class="align-items-center text-decoration-none fw-bold text-white"
+            >
+              <i class="fa-solid fa-lock-open"></i>
+              <span>Value Unlock</span></a
+            >
+          </div>
+          <div class="d-flex pb-2">
+            <a
+              href="c2b.html"
+              class="align-items-center text-decoration-none fw-bold text-white"
+            >
+              <i class="fa-solid fa-lock"></i>
+              <span>C2B</span></a
+            >
+          </div>
+          <div class="d-flex pb-2">
+            <a
+              href="virtual_calculator.html"
+              class="align-items-center text-decoration-none fw-bold text-white"
+            >
+              <i class="fa-solid fa-calculator"></i>
+              <span>Virtual Calculator</span></a
+            >
+          </div>
+          <div class="d-flex">
+            <a
+              href="settings.html"
+              class="align-items-center text-decoration-none fw-bold text-white"
+            >
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span></a
+            >
+          </div>
+        </div>
+
+        <!-- logout navbar start -->
+        <div class="col-9 p-0" style="width: 80%">
+          <div class="bg-info d-flex justify-content-end p-3">
+            <span><button class="btn bg-white">Logout</button></span>
+          </div>
+
+          <!-- email -->
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="pt-4">C2B</h3>
+                <hr />
+              </div>
+            </div>
+          </div>
+
+          <!-- cards -->
+          <div class="container">
+            <div class="row py-2">
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div
+                  class="card mb-3 radius-fix border-start border-0 border-5 border-info"
+                  style="max-width: 540px"
+                >
+                  <div class="card-body p-4">
+                    <div class="display-4">
+                      <i class="fas fa-money-bill text-info"></i>
+                    </div>
+                    <h4 class="card-text py-3">Available Balance</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div
+                  class="card mb-3 radius-fix border-start border-0 border-5 border-info"
+                  style="max-width: 540px"
+                >
+                  <div class="card-body p-4">
+                    <div class="display-4">
+                      <i class="far fa-comment-alt text-info"></i>
+                    </div>
+                    <h4 class="card-text py-3">In Process</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <div
+                  class="card mb-3 radius-fix border-start border-0 border-5 border-info"
+                  style="max-width: 540px"
+                >
+                  <div class="card-body p-4">
+                    <div class="display-4">
+                      <i class="fas fa-money-bill-wave text-info"></i>
+                    </div>
+                    <h4 class="card-text py-3">Withdraw Balance</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="ChooseWithdrawMethod">Choose Withdraw Method</label>
+                <select
+                  class="form-control mt-1 w-25"
+                  name="withdrawmethod"
+                  id="withdrawmethod"
+                >
+                  <option disabled value="">choose withdraw method</option>
+                  <option value="Bank"><a href="#section1">Bank</a></option>
+                  <option value="Crypto"><a href="#section2">Crypto</a></option>
+                </select>
+              </div>
+              <div id="section1" class="col-12 content-section">
+                <h1>Section 1</h1>
+                <p>This is the content for Section 1.</p>
+              </div>
+              <div id="section2" class="col-12 content-section">
+                <h1>Section 2</h1>
+                <p>This is the content for Section 2.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- email -->
+          <div class="container">
+            <div class="row">
+              <div class="col-12 pb-5">
+                <div class="border-form radius-fix border-0">
+                  <div class="row ps-3">
+                    <div class="col-6">
+                      <div class="form-container pt-4">
+                        <form>
+                          <h5 class="mb-4 text-info">Your Crypto Details</h5>
+
+                          <div class="mb-3">
+                            <label for="Identity" class="form-label"
+                              >Full Name</label
+                            >
+                            <div class="input-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputGroupFile04"
+                                placeholder="Enter Your Name"
+                                aria-describedby="inputGroupFileAddon04"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="Address" class="form-label"
+                              >USDT ERC20</label
+                            >
+                            <div class="input-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputGroupFile04"
+                                placeholder="USDT ERC20"
+                                aria-describedby="inputGroupFileAddon04"
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+
+                    <!-- half side has the form and the other half have the bg image -->
+                    <div class="col-6">
+                      <div class="form-container pt-4">
+                        <form>
+                          
+
+                          <div class="mb-3 pt-5 pe-3">
+                            <label for="Identity" class="form-label"
+                              >Full Name</label
+                            >
+                            <div class="input-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputGroupFile04"
+                                placeholder="Enter Your Name"
+                                aria-describedby="inputGroupFileAddon04"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="mb-3 pe-3">
+                            <label for="Address" class="form-label"
+                              >USDT ERC20</label
+                            >
+                            <div class="input-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="inputGroupFile04"
+                                placeholder="USDT ERC20"
+                                aria-describedby="inputGroupFileAddon04"
+                              />
+                            </div>
+                            <div class="d-flex justify-content-end pt-3 pb-5 pe-3">
+                            <button class="btn btn-info text-white">Withdraw</button>
+                            </div>  
+                        </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
