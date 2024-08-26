@@ -92,6 +92,7 @@
 	border-top: 0px solid transparent;
 	border-right: 125px solid transparent;
 	border-bottom: 125px solid transparent;
+    
 }
 .topright {
     position: absolute;
@@ -99,6 +100,16 @@
     right: 0px;
     
   }
+  .triangle-round {
+	width: 0;
+	height: 0;
+	border-top: 75px solid transparent;
+	border-right: 75px solid rgb(208,247,255);
+	border-bottom: 75px solid transparent;
+}
+
+  
+
   /* finished inserting triangle */
 
 .navbar-nav .nav-link:hover
@@ -121,9 +132,13 @@ color:rgb(22,213,255);
 }
 
   /* shadow */
-  div.card {
+  .card {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
+  }
+  
+  .border-form{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
   }
 
   /* backgroung image */
@@ -143,9 +158,34 @@ color:rgb(22,213,255);
     margin: 0px;
 }
 
+.email-background {
+    background-image: url("/Ashar/assets/images/tQXYHw.svg"); /* Replace with your image path */
+    background-size:98%;
+    background-attachment: fixed;
+    /* background-position: center; */
+    
+    padding: 10px;
+    border-radius: 5px;
+  }
+    .email-background input {
+      background-color: transparent;
+      border: none;
+      color: black;
+    }
 
+    .emailTick-width
+    {
+        width: 30px;
+        height: 30px;
+        padding-left: 4px;
+        
+    }
 
 /* end background image */
+
+/* trying new animation  */
+
+
   
 
 
