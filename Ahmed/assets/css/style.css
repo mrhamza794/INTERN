@@ -1,0 +1,77 @@
+* {
+    margin: 0% !important;
+
+}
+
+.nav-link:hover {
+    color: #16d5ff;
+}
+
+.bg-gray {
+    background-color: #f8f9fa;
+}
+
+.image-fluid {
+    height: auto;
+    max-width: 100%;
+}
+
+.spacing {
+    line-height: 30px;
+}
+
+.decoration {
+    text-decoration: none;
+}
+
+.margin-left {
+    margin-left: 400px;
+}
+
+.margin-top {
+    margin-top: 100px;
+}
+
+.footer-items a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-items a :hover {
+    color: #16d5ff;
+    text-decoration: none;
+}
+
+.animation {
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes example {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+ul li{
+    color: white;
+    list-style-type: none;
+    line-height: 40px;
+    font-weight: bolder;
+
+}
+ul a{
+    text-decoration: none;
+}
+.sidebar-height{
+    min-height: 100vh;
+}
