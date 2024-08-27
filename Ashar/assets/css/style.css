@@ -124,10 +124,17 @@ color:rgb(22,213,255);
 }
 
 /* table team images width setting */
-.image-width img
+.image-width-dash img
 {
     height: 40px;
     width: 40px;
+    border-radius: 100%;
+}
+
+.image-width-setting img
+{
+    height: 100px;
+    width: 100px;
     border-radius: 100%;
 }
 
