@@ -52,15 +52,15 @@
 
 
 
-// let a = parseInt(prompt('Enter the first variable: '));
-// let b = parseInt(prompt('Enter the second variable: '));
+let a = parseInt(prompt('Enter the first variable: '));
+let b = parseInt(prompt('Enter the second variable: '));
 
-// a = a + b;
-// b = a - b;
-// a = a - b;
+a = a + b;
+b = a - b;
+a = a - b;
 
-// console.log(`The value of a after swapping: ${a}`);
-// console.log(`The value of b after swapping: ${b}`);
+console.log(`The value of a after swapping: ${a}`);
+console.log(`The value of b after swapping: ${b}`);
 
 
 // const fahrenhiet = prompt("Enter a fahrenhiet value: ");
@@ -92,11 +92,11 @@
 // });
 
 
-const arrayItems = ['item1', 'item2', 'item3'];
-const copyItems = [];
+// const arrayItems = ['item1', 'item2', 'item3'];
+// const copyItems = [];
 
-for (let i = 0; i < arrayItems.length; i++) {
-  copyItems.push(arrayItems[i]);
-}
+// for (let i = 0; i < arrayItems.length; i++) {
+//   copyItems.push(arrayItems[i]);
+// }
 
-console.log(copyItems);
+// console.log(copyItems);
