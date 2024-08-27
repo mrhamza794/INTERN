@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students List</title>
+</head>
+
+<body>
+    <h2>Students Information</h2>
+    <div id="students-list"></div>
+
+    <script>
+        // Array of student objects
+        const students = [
+            { id: 1, name: 'Alice Johnson', age: 20, course: 'Computer Science', img:"Ashar/assets/images/avatar2.png" },
+            { id: 2, name: 'Bob Smith', age: 23, course: 'Mechanical Engineering',img:"Ashar/assets/images/avatar3.png" },
+            { id: 3, name: 'Charlie Brown', age: 19, course: null ,img:"" },
+            { id: 4, name: 'David Williams', age: 21, course: 'Physics',img:"" },
+            { id: 5, name: 'Eve Davis', age: 23, course: null,img:"" }
+        ];
+
+        // Get the element where we want to display the students
+        const studentsListDiv = document.getElementById('students-list');
+
+        // Generate the HTML content using the map method
+        const content = students.map(student => `
+            <li>
+                <strong>ID:</strong> ${student.id}<br>
+                <strong>Name:</strong> ${student.name}<br>
+                <strong>Age:</strong> ${student.age }<br>
+                <strong>Course:</strong> ${student.course}
+            </li><br>
+            <img src=${student?.img || "Ashar/assets/images/avatar1.png"} alt=${student?.name} />
+        `).join('');
+
+        // Wrap the content in a <ul> tag
+        studentsListDiv.innerHTML = `<ul>${content}</ul>`;
+    </script>
+</body>
+
+</html>
