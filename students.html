@@ -16,9 +16,9 @@
         const students = [
             { id: 1, name: 'Alice Johnson', age: 20, course: 'Computer Science', img:"Ashar/assets/images/avatar2.png" },
             { id: 2, name: 'Bob Smith', age: 23, course: 'Mechanical Engineering',img:"Ashar/assets/images/avatar3.png" },
-            { id: 3, name: 'Charlie Brown', age: 19, course: null ,img:"" },
-            { id: 4, name: 'David Williams', age: 21, course: 'Physics',img:"" },
-            { id: 5, name: 'Eve Davis', age: 23, course: null,img:"" }
+            { id: 3, name: 'Charlie Brown', age: 19, course: null ,img:"Ashar/assets/images/avatar2.png" },
+            { id: 4, name: 'David Williams', age: 21, course: 'Physics',img:"Ashar/assets/images/avatar3.png" },
+            { id: 5, name: 'Eve Davis', age: 23, course: null,img:"Ashar/assets/images/avatar1.png" }
         ];
 
         // Get the element where we want to display the students
@@ -33,7 +33,7 @@
                 <strong>Course:</strong> ${student.course}
             </li><br>
             <img src=${student?.img || "Ashar/assets/images/avatar1.png"} alt=${student?.name} />
-        `).join('');
+        `).join(' ');
 
         // Wrap the content in a <ul> tag
         studentsListDiv.innerHTML = `<ul>${content}</ul>`;

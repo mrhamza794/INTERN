@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Workers Information</h2>
+    <div id="Workers-list"></div>
+
+    <script>
+        // Array of all workers 
+
+        const workers = [
+            {id:1 , name:"Ahmed", age:20, position:"Manager", city:"Lahore"},
+            {id:2 , name:"Ashar", age:29, position:"accountant", city:"karachi"},
+            {id:3 , name:"Ali", age:24, position:"waiter", city:"quetta"},
+            {id:4 , name:"Abdullah", age:28, position:"cleaner", city:"islamabad"},
+        ]
+
+        const WorkersListDiv = document.getElementById('Workers-list');
+
+        const content = workers.map(worker => `
+        <li>
+            <strong>ID: </strong> ${worker.id} <br>
+            <strong>Name: </strong> ${worker.name} <br>
+            <strong>Age: </strong> ${worker.age} <br>
+            <strong>City: </strong> ${worker.city} <br>
+            </li>
+        `);
+
+        WorkersListDiv.innerHTML = `<ul>${content}</ul>`;
+    </script>
+</body>
+</html>
