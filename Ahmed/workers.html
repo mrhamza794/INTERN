@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,5 +32,85 @@
 
         WorkersListDiv.innerHTML = `<ul>${content}</ul>`;
     </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Workers Information</h2>
+    <div id="Workers-list"></div>
+
+    <script>
+        const workers = [
+            { id:1 , name: "ahmed" , age: 20 , position: "owner" , city: "lahore"},
+            { id:2 , name: "ammar" , age: 21 , position: "manager" , city: "lahore"},
+            { id:3 , name: "zain" , age: 22 , position: "waiter" , city: "lahore"},
+            { id:4 , name: "faizan" , age: 23 , position: "cleaner" , city: "lahore"},
+            { id:5 , name: "asad" , age: 24 , position: "accountant" , city: "lahore"},
+
+        ];
+
+        const WorkersListDiv = document.getElementById('Workers-list')
+
+        const content = workers.map(worker => `
+        <li>
+            <strong> Id: </strong> ${worker.id} <br>
+            <strong> name: </strong> ${worker.name} <br>
+            <strong> age: </strong> ${worker.age} <br>
+            <strong> position: </strong> ${worker.position} <br>
+            <strong> city: </strong> ${worker.city} <br>
+            </li>
+        `);
+
+        WorkersListDiv.innerHTML = `<ul> ${content} </ul>`;
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>education</h2>
+    <!-- <div id="education-list"></div>
+    <script>
+        const education = [
+            {id:1 , name: "ahmed", age: 19 , degree: "bscs"},
+            {id:2 , name: "zain", age: 18 , degree: "bscs"},
+            {id:3 , name: "ali", age: 20},
+            {id:4 , name: "ashar", age: 21 , degree: "bscs"},
+        ];
+
+        const educationList =  document.getElementById("education-list");
+        const content = education.map(educations => {
+            let example;
+            if(educations.degree){
+                example= `degree: ${educations.degree}`
+            } else {
+                example = `degree:not availavble`
+            }
+        
+        return `
+        <li>
+            id ${educations.id} <br>
+            name ${educations.name} <br>
+            age ${educations.age} <br>
+            degree ${educations.degree} <br>
+        </li>`;
+    });
+
+    educationList.innerHTML = `<ul> ${content} </ul>`;
+
+    </script> -->
 </body>
 </html>
